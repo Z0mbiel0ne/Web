@@ -1,0 +1,43 @@
+#logo
+{
+	width: 20%;
+	height: 100;
+}
+
+#buttons
+{
+	float: right;
+ 	width: 80%;
+}
+
+#bild
+{
+	width: 100px;
+	height: 100px;
+}
+
+.knopf:hover
+{
+	color: #0ff;
+	text-decoration: underline;
+	background-color: #FAA
+}
+
+.knopf
+{
+
+	color: #ff0;
+	background-color: #DDD;
+	text-decoration: none;
+}
+
+.active
+{
+	color: #0f0;
+	background-color: #aaa;
+	text-decoration: underline;
+}
+
+.knopf:visited {
+	color: #f00;
+}
