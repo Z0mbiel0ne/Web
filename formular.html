@@ -1,6 +1,7 @@
-<html>
+﻿<html>
 
 	<head>
+	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>
 		Test Verein
@@ -11,26 +12,27 @@
 	<body>
 
 		<nav>
-			
-			<a href="index.html"> Vereinsnachrichten-Index</a>
-
-			<a href="vorstand.html"> Vorstand</a>
-		
-		</nav>
+        <a href="index.html"><img id="logo" title="Logo des Vereins" alt="Logo" src="img/logo.png"></a>
+        <div id = "navigation">
+          <a class="knopf groß" href="index.html">Vereinsnachrichten-Index</a>
+          <a class="knopf groß" href="vorstand.html">Vorstand</a>
+          <a class="knopf groß" href="formular.html">Kontakt</a> 
+        </div> 
+      </nav>
 
 		<br>
 		
 		<div>
-				<form method="GET" action="./">
-						<fieldset>
+				<form method="GET" action="index.html">
+						<fieldset id="fragen">
 							<label>Vorname:</label>
-							<input type="text" name="vorname">
+							<input type="text" name="vorname" autofocus="autofocus" required="required">
 							<br>
 							<label>Nachname:</label>
-							<input type="text" name="nachname">
+							<input type="text" name="nachname" required="required">
 							<br>
 							<label>Datum:</label>
-							<input type="date" name="datum">
+							<input type="date" name="datum" required="required">
 							<br>
 							<label>Grund:</label>
 							<select>
@@ -41,8 +43,12 @@
 							</select>
 							<br>
 							<textarea rows="4" cols="50"></textarea>
+							<br>
+							<div style="width: 100%">
+								<button style="float: left;" class="knopf klein" type="submit">Absenden</button>
+								<button style="float: right;" class="knopf klein" type="reset">Löschen</button>
+							</div>
 						</fieldset>
-						<button type="submit">Absenden</button>
 				</form>
 		</div>
 	
